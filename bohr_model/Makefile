@@ -1,5 +1,5 @@
 NAME = bohr
-SRCS = main.c 
+SRCS = main.c utils.c specters.c
 OBJS = $(SRCS:.c=.o)
 CC = gcc 
 CFLAGS = -Wall -Wextra -Werror -g 
@@ -8,7 +8,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -lm -o $(NAME)
 
-%.o:%.c 
+%.o:%.c bohr.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean: 

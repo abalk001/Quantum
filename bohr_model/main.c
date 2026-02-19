@@ -1,30 +1,23 @@
-#include <stdio.h>
-#include <unistd.h>
-#include <math.h>
+#include "bohr.h"
 
-# define BOHR 1
-# define TIME 20 // sec 
-# define DT 0.1
-# define RADIUS 1
-# define V1 2.19e6
+
 
 int main()
 {
-  
-  FILE *f = fopen("data.csv", "w");
-  if (!f)
-    return(-1);
-  double t = 0;
-  double x = 0;
-  double y = 0;
-  fprintf(f,"time,x,y\n");
-  for (int i = 0; i < TIME/DT; i++)
-  {
-    x = RADIUS * cos(V1 * t);
-    y = RADIUS * sin(V1 * t);
-    fprintf(f, "%.2f,%.2f,%.2f\n",t,x,y);
-    t +=DT;
-  }
-  fclose(f);
-  return 0;
+
+    if (ground_state())
+        return(-1);
+	
+    FILE *spectrum = fopen("spectrum.csv", "w");
+    if (!spectrum)
+        return(-1);
+
+    fprintf(spectrum,"n1,n2,wavelength_nm,energy_eV,series\n");
+    lyman_series(spectrum);
+	balmer_series(spectrum);
+	paschen_series(spectrum);
+	brackett_series(spectrum);
+    fclose(spectrum);
+    
+    return 0;
 }
