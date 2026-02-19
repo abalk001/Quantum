@@ -1,0 +1,23 @@
+NAME = bohr
+SRCS = main.c 
+OBJS = $(SRCS:.c=.o)
+CC = gcc 
+CFLAGS = -Wall -Wextra -Werror -g 
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -lm -o $(NAME)
+
+%.o:%.c 
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean: 
+	rm -rf $(OBJS)
+fclean: clean
+	rm -rf $(NAME) *.csv
+
+re: fclean all 
+
+sim: 
+	./$(NAME) && python3 simulation.py
+.PHONY: re fclean all clean 
