@@ -7,16 +7,9 @@
 # define DT 0.1
 # define RADIUS 1
 # define V1 2.19e6
+
 int main()
 {
-  FILE *meta = fopen("metadata.csv", "w");
-  if (!meta)
-    return(fprintf(stderr,"Error in the fd\n"), -1);
-  
-
-  fprintf(meta,"x,y\n");
-  fprintf(meta,"%.2f,%.2f\n", 0.0, 0.0);
-  fclose(meta);
   
   FILE *f = fopen("data.csv", "w");
   if (!f)
