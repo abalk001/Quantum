@@ -16,7 +16,7 @@
 # define RYDBERG_CONST 1.097e7   // m^-1
 # define IONIZATION_ENERGY 13.6  // eV
 # define N 1000 // number of points in the  wave
-# define QUANTUM_N 1 // I guess it the name is enough
+# define QUANTUM_N 2 // I guess it the name is enough
 
 
 // Simulation parameters
@@ -34,7 +34,7 @@ void	balmer_series(FILE *spectrum);
 void	paschen_series(FILE *spectrum);
 void	brackett_series(FILE *spectrum);
 double	calculate_wavelength(int n1, int n2);
-int		ground_state(void);
+int		state(int n);
 void	wave_fct(void);
 void	print_energy_levels(void);
 

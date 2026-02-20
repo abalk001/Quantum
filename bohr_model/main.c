@@ -4,7 +4,7 @@
 
 int main()
 {
-  if (ground_state())
+  if (state(QUANTUM_N))
     return(-1);
   
   FILE *spectrum = fopen("spectrum.csv", "w");

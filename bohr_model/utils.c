@@ -21,14 +21,13 @@ double calculate_wavelength(int n1, int n2)
     double inv_lambda = RYDBERG_CONST * (1.0 / (n1*n1) - 1.0 / (n2*n2)); // lambda = Ry * (1/n1^2 - 1/n2^2)
     return 1.0 / inv_lambda * 1e9; // convert to nm
 }
-int ground_state()
+int state(int n)
 {
 	FILE *f = fopen("data.csv", "w");
 	if (!f)
 		return(-1);
 
 	fprintf(f,"time,n,x,y,radius,velocity,energy\n");
-	int n = 1;
     double radius = calculate_radius(n);
     double velocity = calculate_velocity(n);
     double omega = velocity / radius; 
