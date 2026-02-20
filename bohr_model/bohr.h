@@ -15,7 +15,6 @@
 #define SPEED_LIGHT 2.998e8     // m/s
 #define RYDBERG_CONST 1.097e7   // m^-1
 #define IONIZATION_ENERGY 13.6  // eV
-
 // Simulation parameters
 #define TIME 1e-15      // fs 
 #define DT 1e-18        

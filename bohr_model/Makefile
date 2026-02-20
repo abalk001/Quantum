@@ -19,5 +19,5 @@ fclean: clean
 re: fclean all 
 
 sim: 
-	./$(NAME) && python3 simulation.py
+	./$(NAME) && python3 sim.py
 .PHONY: re fclean all clean 
