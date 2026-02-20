@@ -1,5 +1,5 @@
 NAME = bohr
-SRCS = main.c utils.c specters.c
+SRCS = main.c utils.c specters.c wave_fct.c
 OBJS = $(SRCS:.c=.o)
 CC = gcc 
 CFLAGS = -Wall -Wextra -Werror -g 
