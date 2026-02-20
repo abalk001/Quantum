@@ -122,7 +122,7 @@ Example (Balmer series, visible light):
 
 ### Python Visualizations
 
-#### 1. **3D Animated Bohr Model** ([sim.py](sim.py))
+**3D Animated Bohr Model** ([sim.py](sim.py))
 Creates an interactive 3D animation showing:
 - **Left panel**: Electron orbit with superimposed de Broglie wave
   - Gray circle: classical orbit path
@@ -139,11 +139,6 @@ Creates an interactive 3D animation showing:
 - `R`: Reset to beginning
 - `S`: Save screenshot
 - `E`: Exit
-
-#### 2. **Particle on a Ring** ([free_particle_sim.py](free_particle_sim.py))
-Visualizes the quantum wavefunction for a free particle constrained to a circular path:
-- 3D plot showing $\text{Re}(\psi)$ as height above the ring
-- Demonstrates wave-particle duality and quantization
 
 ---
 
