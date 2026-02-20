@@ -58,7 +58,7 @@ When an electron transitions from a higher energy level $n_2$ to a lower level $
 
 $$\frac{1}{\lambda} = R_H \left( \frac{1}{n_1^2} - \frac{1}{n_2^2} \right)$$
 
-where $R_H = 1.097 \times 10^7$ m$^{-1}$ is the **Rydberg constant**.
+where $R_H = 1.097 \times 10^7 m^{-1}$ is the **Rydberg constant**.
 
 The photon energy is:
 
@@ -225,7 +225,7 @@ The animation demonstrates that:
 | Vacuum permittivity    | $\epsilon_0$| $8.854 \times 10^{-12}$ F/m |
 | Planck constant        | $h$         | $6.626 \times 10^{-34}$ J·s |
 | Speed of light         | $c$         | $2.998 \times 10^8$ m/s |
-| Rydberg constant       | $R_H$       | $1.097 \times 10^7$ m$^{-1}$ |
+| Rydberg constant       | $R_H$       | $1.097 \times 10^7 m^{-1}$ |
 | Ionization energy      | -           | 13.6 eV                  |
 
 ---
