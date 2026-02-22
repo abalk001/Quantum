@@ -16,7 +16,7 @@
 # define RYDBERG_CONST 1.097e7   // m^-1
 # define IONIZATION_ENERGY 13.6  // eV
 # define N 1000 // number of points in the  wave
-# define QUANTUM_N 2 // I guess it the name is enough
+# define QUANTUM_N 3 // I guess it the name is enough
 
 
 // Simulation parameters
